@@ -1,0 +1,4 @@
+/config/.bashrc
+/config/.HA_VERSION
+/config/.profile
+/config/home-assistant.log*
