@@ -48,3 +48,7 @@ sensor: !include_dir_list sensors
 switch: !include_dir_list switches
 template:
 - sensor: !include_dir_list templates/sensor
+zha:
+  zigpy_config:
+    ota:
+      ikea_provider: true
