@@ -4,3 +4,6 @@ views:
 - cards: !include_dir_list cards/office
   path: office
   title: Office
+- cards: !include_dir_list cards/stairwell
+  path: stairwell
+  title: Stairwell
