@@ -1,0 +1,114 @@
+---
+cards:
+- entities:
+  - entities:
+    - entities:
+      - entities:
+        - entity: light.kitchen_downlight_01
+          name: Downlight 01
+          secondary_info: "{{states('sensor.kitchen_downlight_01_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_02
+          name: Downlight 02
+          secondary_info: "{{states('sensor.kitchen_downlight_02_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_05
+          name: Downlight 05
+          secondary_info: "{{states('sensor.kitchen_downlight_05_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_06
+          name: Downlight 06
+          secondary_info: "{{states('sensor.kitchen_downlight_06_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_09
+          name: Downlight 09
+          secondary_info: "{{states('sensor.kitchen_downlight_09_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_10
+          name: Downlight 10
+          secondary_info: "{{states('sensor.kitchen_downlight_10_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        head:
+          entity: light.kitchen_downlights_a
+          name: Downlights A
+          secondary_info: "{{states('sensor.kitchen_downlights_a_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        type: custom:fold-entity-row
+      - entities:
+        - entity: light.kitchen_downlight_03
+          name: Downlight 03
+          secondary_info: "{{states('sensor.kitchen_downlight_03_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_04
+          name: Downlight 04
+          secondary_info: "{{states('sensor.kitchen_downlight_04_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_07
+          name: Downlight 07
+          secondary_info: "{{states('sensor.kitchen_downlight_07_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_08
+          name: Downlight 08
+          secondary_info: "{{states('sensor.kitchen_downlight_08_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        head:
+          entity: light.kitchen_downlights_b
+          name: Downlights B
+          secondary_info: "{{states('sensor.kitchen_downlights_b_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        type: custom:fold-entity-row
+      - entities:
+        - entity: light.kitchen_downlight_11
+          name: Downlight 11
+          secondary_info: "{{states('sensor.kitchen_downlight_11_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        - entity: light.kitchen_downlight_12
+          name: Downlight 12
+          secondary_info: "{{states('sensor.kitchen_downlight_12_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        head:
+          entity: light.kitchen_downlights_c
+          name: Downlights C
+          secondary_info: "{{states('sensor.kitchen_downlights_c_power') | round(1) }} W"
+          type: custom:secondaryinfo-entity-row
+        type: custom:fold-entity-row
+      head:
+        entity: light.kitchen_downlights
+        name: Downlights
+        secondary_info: "{{states('sensor.kitchen_downlights_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      type: custom:fold-entity-row
+    - entities:
+      - entity: light.kitchen_nightlight_1
+        name: Nightlight 1
+        secondary_info: "{{states('sensor.kitchen_nightlight_1_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      - entity: light.kitchen_nightlight_2
+        name: Nightlight 2
+        secondary_info: "{{states('sensor.kitchen_nightlight_2_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      - entity: light.kitchen_nightlight_3
+        name: Nightlight 3
+        secondary_info: "{{states('sensor.kitchen_nightlight_3_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      - entity: light.kitchen_nightlight_4
+        name: Nightlight 4
+        secondary_info: "{{states('sensor.kitchen_nightlight_4_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      head:
+        entity: light.kitchen_nightlights
+        name: Nightlights
+        secondary_info: "{{states('sensor.kitchen_nightlights_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      type: custom:fold-entity-row
+    head:
+      entity: light.kitchen_lights
+      name: Lights
+      secondary_info: "{{states('sensor.kitchen_lights_power') | round(1) }} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Lights
+type: grid

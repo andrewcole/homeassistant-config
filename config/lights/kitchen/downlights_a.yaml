@@ -1,0 +1,11 @@
+---
+entities:
+- light.kitchen_downlight_01
+- light.kitchen_downlight_02
+- light.kitchen_downlight_05
+- light.kitchen_downlight_06
+- light.kitchen_downlight_09
+- light.kitchen_downlight_10
+name: Kitchen Downlights A
+platform: group
+unique_id: kitchen_downlights_a
