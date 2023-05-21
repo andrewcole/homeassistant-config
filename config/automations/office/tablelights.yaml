@@ -23,6 +23,7 @@ mode: single
 trigger:
 - entity_id:
   - sensor.office_switch_1
+  - sensor.office_switch_2
   from: "OFF"
   platform: state
   to: SINGLE
