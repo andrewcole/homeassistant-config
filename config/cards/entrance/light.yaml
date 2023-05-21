@@ -1,0 +1,26 @@
+---
+cards:
+- entities:
+  - entities:
+    - entities:
+      - entity: light.entrance_downlight_1
+        name: Downlight 1
+        secondary_info: "{{states('sensor.entrance_downlight_1_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      head:
+        entity: light.entrance_downlights
+        name: Downlights
+        secondary_info: "{{states('sensor.entrance_downlights_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      type: custom:fold-entity-row
+    head:
+      entity: light.entrance_lights
+      name: Lights
+      secondary_info: "{{states('sensor.entrance_lights_power') | round(1) }} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Lights
+type: grid

@@ -16,6 +16,9 @@ views:
 - cards: !include_dir_list cards/ensuite
   path: ensuite
   title: Ensuite
+- cards: !include_dir_list cards/entrance
+  path: entrance
+  title: Entrance
 - cards: !include_dir_list cards/lounge
   path: lounge
   title: Lounge

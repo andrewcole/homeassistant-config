@@ -1,0 +1,6 @@
+---
+entities:
+- light.entrance_downlights
+name: Entrance Lights
+platform: group
+unique_id: entrance_lights
