@@ -1,0 +1,6 @@
+---
+entities:
+- light.lounge_downlights
+name: Lounge Lights
+platform: group
+unique_id: lounge_lights
