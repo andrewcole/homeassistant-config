@@ -5,46 +5,64 @@ cards:
     - entities:
       - entity: light.office_downlight_1
         name: Downlight 1
-        secondary_info: "{{ states('sensor.office_downlight_1_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_downlight_1_power
+          name: Power
+        type: custom:multiple-entity-row
       - entity: light.office_downlight_2
         name: Downlight 2
-        secondary_info: "{{ states('sensor.office_downlight_2_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_downlight_2_power
+          name: Power
+        type: custom:multiple-entity-row
       - entity: light.office_downlight_3
         name: Downlight 3
-        secondary_info: "{{ states('sensor.office_downlight_3_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_downlight_3_power
+          name: Power
+        type: custom:multiple-entity-row
       - entity: light.office_downlight_4
         name: Downlight 4
-        secondary_info: "{{ states('sensor.office_downlight_4_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_downlight_4_power
+          name: Power
+        type: custom:multiple-entity-row
       head:
         entity: light.office_downlights
         name: Downlights
-        secondary_info: "{{ states('sensor.office_downlights_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_downlights_power
+          name: Power
+        type: custom:multiple-entity-row
       type: custom:fold-entity-row
     - entities:
       - entity: light.office_tablelight_1
         name: Tablelight 1
-        secondary_info: "{{ states('sensor.office_tablelight_1_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_tablelight_1_power
+          name: Power
+        type: custom:multiple-entity-row
       - entity: light.office_tablelight_2
         name: Tablelight 2
-        secondary_info: "{{ states('sensor.office_tablelight_2_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_tablelight_2_power
+          name: Power
+        type: custom:multiple-entity-row
       head:
         entity: light.office_tablelights
         name: Tablelights
-        secondary_info: "{{ states('sensor.office_tablelights_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.office_tablelights_power
+          name: Power
+        type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
       entity: light.office_lights
       name: Lights
-      secondary_info: "{{ states('sensor.office_lights_power') | float(default=0) | round(1) }} W"
-      type: custom:secondaryinfo-entity-row
+      entities:
+      - entity: sensor.office_lights_power
+        name: Power
+      type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
 columns: 1

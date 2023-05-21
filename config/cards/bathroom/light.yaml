@@ -5,19 +5,26 @@ cards:
     - entities:
       - entity: light.bathroom_downlight_1
         name: Downlight 1
-        secondary_info: "{{ states('sensor.bathroom_downlight_1_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.bathroom_downlight_1_power
+          name: Power
+        type: custom:multiple-entity-row
       head:
         entity: light.bathroom_downlights
         name: Downlights
-        secondary_info: "{{ states('sensor.bathroom_downlights_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.bathroom_downlights_power
+          name: Power
+        type: custom:multiple-entity-row
+      type: custom:fold-entity-row
       type: custom:fold-entity-row
     head:
       entity: light.bathroom_lights
       name: Lights
-      secondary_info: "{{ states('sensor.bathroom_lights_power') | float(default=0) | round(1) }} W"
-      type: custom:secondaryinfo-entity-row
+      entities:
+      - entity: sensor.bathroom_lights_power
+        name: Power
+      type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
 columns: 1

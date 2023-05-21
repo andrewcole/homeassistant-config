@@ -6,83 +6,117 @@ cards:
       - entities:
         - entity: light.kitchen_downlight_01
           name: Downlight 01
-          secondary_info: "{{ states('sensor.kitchen_downlight_01_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_01_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_02
           name: Downlight 02
-          secondary_info: "{{ states('sensor.kitchen_downlight_02_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_02_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_05
           name: Downlight 05
-          secondary_info: "{{ states('sensor.kitchen_downlight_05_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_05_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_06
           name: Downlight 06
-          secondary_info: "{{ states('sensor.kitchen_downlight_06_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_06_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_09
           name: Downlight 09
-          secondary_info: "{{ states('sensor.kitchen_downlight_09_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_09_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_10
           name: Downlight 10
-          secondary_info: "{{ states('sensor.kitchen_downlight_10_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_10_power
+            name: Power
+          type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_a
           name: Downlights A
-          secondary_info: "{{ states('sensor.kitchen_downlights_a_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlights_a_power
+            name: Power
+          type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
         - entity: light.kitchen_downlight_03
           name: Downlight 03
-          secondary_info: "{{ states('sensor.kitchen_downlight_03_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_03_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_04
           name: Downlight 04
-          secondary_info: "{{ states('sensor.kitchen_downlight_04_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_04_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_07
           name: Downlight 07
-          secondary_info: "{{ states('sensor.kitchen_downlight_07_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_07_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_08
           name: Downlight 08
-          secondary_info: "{{ states('sensor.kitchen_downlight_08_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_08_power
+            name: Power
+          type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_b
           name: Downlights B
-          secondary_info: "{{ states('sensor.kitchen_downlights_b_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlights_b_power
+            name: Power
+          type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
         - entity: light.kitchen_downlight_11
           name: Downlight 11
-          secondary_info: "{{ states('sensor.kitchen_downlight_11_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_11_power
+            name: Power
+          type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_12
           name: Downlight 12
-          secondary_info: "{{ states('sensor.kitchen_downlight_12_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlight_12_power
+            name: Power
+          type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_c
           name: Downlights C
-          secondary_info: "{{ states('sensor.kitchen_downlights_c_power') | float(default=0) | round(1) }} W"
-          type: custom:secondaryinfo-entity-row
+          entities:
+          - entity: sensor.kitchen_downlights_c_power
+            name: Power
+          type: custom:multiple-entity-row
         type: custom:fold-entity-row
       head:
         entity: light.kitchen_downlights
         name: Downlights
-        secondary_info: "{{ states('sensor.kitchen_downlights_power') | float(default=0) | round(1) }} W"
-        type: custom:secondaryinfo-entity-row
+        entities:
+        - entity: sensor.kitchen_downlights_power
+          name: Power
+        type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
       entity: light.kitchen_lights
       name: Lights
-      secondary_info: "{{ states('sensor.kitchen_lights_power') | float(default=0) | round(1) }} W"
-      type: custom:secondaryinfo-entity-row
+      entities:
+      - entity: sensor.kitchen_lights_power
+        name: Power
+      type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
 columns: 1
