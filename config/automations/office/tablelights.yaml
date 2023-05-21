@@ -1,6 +1,14 @@
 ---
 action:
-- if:
+- else:
+  - data:
+      brightness_pct: 80
+      color_temp: 500
+      transition: 1
+    service: light.turn_on
+    target:
+      entity_id: light.office_tablelights
+  if:
   - condition: state
     entity_id: light.office_tablelights
     state: "on"
@@ -8,18 +16,6 @@ action:
   - data:
       transition: 1
     service: light.turn_off
-    target:
-      entity_id: light.office_tablelights
-- if:
-  - condition: state
-    entity_id: light.office_tablelights
-    state: "off"
-  then:
-  - data:
-      brightness_pct: 80
-      color_temp: 500
-      transition: 1
-    service: light.turn_on
     target:
       entity_id: light.office_tablelights
 mode: single
