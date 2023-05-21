@@ -1,0 +1,12 @@
+---
+cards:
+- entities:
+  - entity: binary_sensor.office_stairwell_door
+    name: Stairwell Door
+    secondary_info: "Sensor Battery {{states('sensor.office_stairwell_door_battery') }}%"
+    type: custom:secondaryinfo-entity-row
+  type: entities
+columns: 1
+square: false
+title: Security
+type: grid
