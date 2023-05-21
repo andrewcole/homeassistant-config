@@ -1,5 +1,18 @@
 ---
 cards:
+- entities:
+  - entities:
+    - entity: sensor.office_humidity
+      name: Humidity
+    - entity: sensor.office_pressure
+      name: Pressure
+    head:
+      entity: sensor.office_temperature
+      name: Temperature
+      secondary_info: "Sensor Battery {{states('sensor.office_climate_sensor_battery') }}%"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  type: entities
 - entity: climate.office_hvac
   type: thermostat
 columns: 1
