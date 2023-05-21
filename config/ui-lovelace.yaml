@@ -1,6 +1,9 @@
 ---
 title: Moonya
 views:
+- cards: !include_dir_list cards/backyard
+  path: backyard
+  title: Backyard
 - cards: !include_dir_list cards/bathroom
   path: bathroom
   title: Bathroom
