@@ -1,3 +1,6 @@
 ---
 title: Moonya
-views: []
+views:
+- cards: !include_dir_list cards/office
+  path: office
+  title: Office
