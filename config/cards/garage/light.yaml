@@ -1,0 +1,30 @@
+---
+cards:
+- entities:
+  - entities:
+    - entities:
+      - entity: light.garage_fluro_1
+        name: Fluro 1
+        secondary_info: "{{states('sensor.garage_fluro_1_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      - entity: light.garage_fluro_2
+        name: Fluro 2
+        secondary_info: "{{states('sensor.garage_fluro_2_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      head:
+        entity: light.garage_fluros
+        name: Fluros
+        secondary_info: "{{states('sensor.garage_fluros_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      type: custom:fold-entity-row
+    head:
+      entity: light.garage_lights
+      name: Lights
+      secondary_info: "{{states('sensor.garage_lights_power') | round(1) }} W"
+      type: custom:secondaryinfo-entity-row
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Lights
+type: grid

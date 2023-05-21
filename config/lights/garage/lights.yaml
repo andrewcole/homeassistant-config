@@ -1,0 +1,6 @@
+---
+entities:
+- light.garage_fluros
+name: Garage Lights
+platform: group
+unique_id: garage_lights

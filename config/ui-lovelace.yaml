@@ -19,6 +19,9 @@ views:
 - cards: !include_dir_list cards/entrance
   path: entrance
   title: Entrance
+- cards: !include_dir_list cards/garage
+  path: garage
+  title: Garage
 - cards: !include_dir_list cards/lounge
   path: lounge
   title: Lounge
