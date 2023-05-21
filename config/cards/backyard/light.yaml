@@ -8,12 +8,14 @@ cards:
           name: Power
         entity: light.backyard_downlight_1
         name: Downlight 1
+        toggle: true
         type: custom:multiple-entity-row
       - entities:
         - entity: sensor.backyard_downlight_2_power
           name: Power
         entity: light.backyard_downlight_2
         name: Downlight 2
+        toggle: true
         type: custom:multiple-entity-row
       head:
         entities:
@@ -21,6 +23,7 @@ cards:
           name: Power
         entity: light.backyard_downlights
         name: Downlights
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -29,6 +32,7 @@ cards:
         name: Power
       entity: light.backyard_lights
       name: Lights
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities

@@ -8,12 +8,14 @@ cards:
         entities:
         - entity: sensor.bedroom_downlight_1_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       - entity: light.bedroom_downlight_2
         name: Downlight 2
         entities:
         - entity: sensor.bedroom_downlight_2_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       head:
         entity: light.bedroom_downlights
@@ -21,6 +23,7 @@ cards:
         entities:
         - entity: sensor.bedroom_downlights_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -29,6 +32,7 @@ cards:
       entities:
       - entity: sensor.bedroom_lights_power
         name: Power
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities

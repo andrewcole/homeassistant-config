@@ -8,30 +8,35 @@ cards:
         entities:
         - entity: sensor.lounge_downlight_1_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       - entity: light.lounge_downlight_2
         name: Downlight 2
         entities:
         - entity: sensor.lounge_downlight_2_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       - entity: light.lounge_downlight_3
         name: Downlight 3
         entities:
         - entity: sensor.lounge_downlight_3_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       - entity: light.lounge_downlight_4
         name: Downlight 4
         entities:
         - entity: sensor.lounge_downlight_4_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       - entity: light.lounge_downlight_5
         name: Downlight 5
         entities:
         - entity: sensor.lounge_downlight_5_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       head:
         entity: light.lounge_downlights
@@ -39,6 +44,7 @@ cards:
         entities:
         - entity: sensor.lounge_downlights_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -47,6 +53,7 @@ cards:
       entities:
       - entity: sensor.lounge_lights_power
         name: Power
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities

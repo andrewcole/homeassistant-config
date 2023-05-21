@@ -9,36 +9,42 @@ cards:
           entities:
           - entity: sensor.kitchen_downlight_01_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_02
           name: Downlight 02
           entities:
           - entity: sensor.kitchen_downlight_02_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_05
           name: Downlight 05
           entities:
           - entity: sensor.kitchen_downlight_05_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_06
           name: Downlight 06
           entities:
           - entity: sensor.kitchen_downlight_06_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_09
           name: Downlight 09
           entities:
           - entity: sensor.kitchen_downlight_09_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_10
           name: Downlight 10
           entities:
           - entity: sensor.kitchen_downlight_10_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_a
@@ -46,6 +52,7 @@ cards:
           entities:
           - entity: sensor.kitchen_downlights_a_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
@@ -54,24 +61,28 @@ cards:
           entities:
           - entity: sensor.kitchen_downlight_03_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_04
           name: Downlight 04
           entities:
           - entity: sensor.kitchen_downlight_04_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_07
           name: Downlight 07
           entities:
           - entity: sensor.kitchen_downlight_07_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_08
           name: Downlight 08
           entities:
           - entity: sensor.kitchen_downlight_08_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_b
@@ -79,6 +90,7 @@ cards:
           entities:
           - entity: sensor.kitchen_downlights_b_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
@@ -87,12 +99,14 @@ cards:
           entities:
           - entity: sensor.kitchen_downlight_11_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.kitchen_downlight_12
           name: Downlight 12
           entities:
           - entity: sensor.kitchen_downlight_12_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.kitchen_downlights_c
@@ -100,6 +114,7 @@ cards:
           entities:
           - entity: sensor.kitchen_downlights_c_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       head:
@@ -108,6 +123,7 @@ cards:
         entities:
         - entity: sensor.kitchen_downlights_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -116,6 +132,7 @@ cards:
       entities:
       - entity: sensor.kitchen_lights_power
         name: Power
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities

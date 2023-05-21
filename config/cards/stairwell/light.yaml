@@ -9,12 +9,14 @@ cards:
           entities:
           - entity: sensor.stairwell_downlight_1_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         - entity: light.stairwell_downlight_2
           name: Downlight 2
           entities:
           - entity: sensor.stairwell_downlight_2_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.stairwell_downlights_a
@@ -22,6 +24,7 @@ cards:
           entities:
           - entity: sensor.stairwell_downlights_a_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
@@ -30,6 +33,7 @@ cards:
           entities:
           - entity: sensor.stairwell_downlight_3_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.stairwell_downlights_b
@@ -37,6 +41,7 @@ cards:
           entities:
           - entity: sensor.stairwell_downlights_b_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
@@ -45,6 +50,7 @@ cards:
           entities:
           - entity: sensor.stairwell_downlight_4_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         head:
           entity: light.stairwell_downlights_c
@@ -52,6 +58,7 @@ cards:
           entities:
           - entity: sensor.stairwell_downlights_c_power
             name: Power
+          toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       head:
@@ -60,6 +67,7 @@ cards:
         entities:
         - entity: sensor.stairwell_downlights_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -68,6 +76,7 @@ cards:
       entities:
       - entity: sensor.stairwell_lights_power
         name: Power
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities

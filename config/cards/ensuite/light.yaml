@@ -8,6 +8,7 @@ cards:
         entities:
         - entity: sensor.ensuite_downlight_1_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       head:
         entity: light.ensuite_downlights
@@ -15,6 +16,7 @@ cards:
         entities:
         - entity: sensor.ensuite_downlights_power
           name: Power
+        toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
@@ -23,6 +25,7 @@ cards:
       entities:
       - entity: sensor.ensuite_lights_power
         name: Power
+      toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
