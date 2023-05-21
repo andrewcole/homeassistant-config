@@ -41,28 +41,13 @@ cards:
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     - entities:
-      - entities:
-        - entity: sensor.office_tablelight_1_power
-          name: false
-        entity: light.office_tablelight_1
+      - entity: light.office_tablelight_1
         name: Tablelight 1
-        toggle: true
-        type: custom:multiple-entity-row
-      - entities:
-        - entity: sensor.office_tablelight_2_power
-          name: false
-        entity: light.office_tablelight_2
+      - entity: light.office_tablelight_2
         name: Tablelight 2
-        toggle: true
-        type: custom:multiple-entity-row
       head:
-        entities:
-        - entity: sensor.office_tablelights_power
-          name: false
         entity: light.office_tablelights
         name: Tablelights
-        toggle: true
-        type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
       entities:
