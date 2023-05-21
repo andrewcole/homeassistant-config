@@ -7,6 +7,9 @@ views:
 - cards: !include_dir_list cards/bedroom
   path: bedroom
   title: Bedroom
+- cards: !include_dir_list cards/ensuite
+  path: ensuite
+  title: Ensuite
 - cards: !include_dir_list cards/office
   path: office
   title: Office
