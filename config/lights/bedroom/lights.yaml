@@ -1,6 +1,7 @@
 ---
 entities:
 - light.bedroom_downlights
+- light.bedroom_tablelights
 name: Bedroom Lights
 platform: group
 unique_id: bedroom_lights

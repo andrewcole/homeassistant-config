@@ -1,0 +1,7 @@
+---
+entities:
+- light.bedroom_tablelight_1
+- light.bedroom_tablelight_2
+name: Bedroom Tablelights
+platform: group
+unique_id: bedroom_tablelights
