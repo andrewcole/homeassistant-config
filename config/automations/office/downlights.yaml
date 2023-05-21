@@ -18,6 +18,7 @@ action:
     service: light.turn_off
     target:
       entity_id: light.office_downlights
+alias: Office Downlights
 mode: single
 trigger:
 - entity_id:

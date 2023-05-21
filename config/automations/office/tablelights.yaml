@@ -18,6 +18,7 @@ action:
     service: light.turn_off
     target:
       entity_id: light.office_tablelights
+alias: Office Tablelights
 mode: single
 trigger:
 - entity_id:
