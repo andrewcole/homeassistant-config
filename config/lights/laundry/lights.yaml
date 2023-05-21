@@ -1,0 +1,6 @@
+---
+entities:
+- light.laundry_downlights
+name: Laundry Lights
+platform: group
+unique_id: laundry_lights

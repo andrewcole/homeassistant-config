@@ -25,6 +25,9 @@ views:
 - cards: !include_dir_list cards/kitchen
   path: kitchen
   title: Kitchen
+- cards: !include_dir_list cards/laundry
+  path: laundry
+  title: Laundry
 - cards: !include_dir_list cards/lounge
   path: lounge
   title: Lounge
