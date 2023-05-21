@@ -19,7 +19,6 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
-      type: custom:fold-entity-row
     head:
       entity: light.bathroom_lights
       name: Lights
