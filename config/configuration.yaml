@@ -1,0 +1,41 @@
+---
+automation ui: !include automations.yaml
+automation dir: !include_dir_list automations
+default_config:
+group: !include_dir_named groups
+homeassistant:
+  country: AU
+  currency: AUD
+  elevation: !secret homeassistant_elevation
+  external_url: !secret homeassistant_external_url
+  internal_url: !secret homeassistant_internal_url
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  name: !secret homeassistant_name
+  time_zone: !secret homeassistant_timezone
+  unit_system: metric
+http:
+  trusted_proxies:
+    - 172.24.0.0/16
+    - 10.0.0.0/8
+    - 127.0.0.1
+    - ::1
+  use_x_forwarded_for: true
+influxdb:
+  api_version: 1
+  database: !secret influxdb_database
+  host: !secret influxdb_host
+  port: !secret influxdb_port
+  ssl: false
+input_number: !include_dir_named inputs
+light: !include_dir_list lights
+lovelace:
+  mode: yaml
+recorder:
+  db_url: !secret recorder_db_url
+scene:
+script:
+sensor: !include_dir_list sensors
+switch: !include_dir_list switches
+template:
+- sensor: !include_dir_list templates/sensor
