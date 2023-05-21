@@ -1,0 +1,6 @@
+---
+entities:
+- light.bathroom_downlights
+name: Bathroom Lights
+platform: group
+unique_id: bathroom_lights
