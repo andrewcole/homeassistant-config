@@ -49,6 +49,7 @@ switch: !include_dir_list switches
 template:
 - sensor: !include_dir_list templates/sensor
 zha:
+  database_path: /config/zigbee/zigbee.db
   zigpy_config:
     ota:
       ikea_provider: true
