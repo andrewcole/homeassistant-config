@@ -1,6 +1,5 @@
 ---
 cards:
-- entities:
 - entity: climate.kitchen_hvac
   type: thermostat
 columns: 1
