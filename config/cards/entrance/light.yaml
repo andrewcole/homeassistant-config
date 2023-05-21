@@ -3,28 +3,28 @@ cards:
 - entities:
   - entities:
     - entities:
-      - entity: light.entrance_downlight_1
-        name: Downlight 1
-        entities:
+      - entities:
         - entity: sensor.entrance_downlight_1_power
           name: Power
+        entity: light.entrance_downlight_1
+        name: Downlight 1
         toggle: true
         type: custom:multiple-entity-row
       head:
-        entity: light.entrance_downlights
-        name: Downlights
         entities:
         - entity: sensor.entrance_downlights_power
           name: Power
+        entity: light.entrance_downlights
+        name: Downlights
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
-      entity: light.entrance_lights
-      name: Lights
       entities:
       - entity: sensor.entrance_lights_power
         name: Power
+      entity: light.entrance_lights
+      name: Lights
       toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row

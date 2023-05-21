@@ -4,134 +4,134 @@ cards:
   - entities:
     - entities:
       - entities:
-        - entity: light.kitchen_downlight_01
-          name: Downlight 01
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_01_power
             name: Power
+          entity: light.kitchen_downlight_01
+          name: Downlight 01
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_02
-          name: Downlight 02
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_02_power
             name: Power
+          entity: light.kitchen_downlight_02
+          name: Downlight 02
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_05
-          name: Downlight 05
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_05_power
             name: Power
+          entity: light.kitchen_downlight_05
+          name: Downlight 05
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_06
-          name: Downlight 06
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_06_power
             name: Power
+          entity: light.kitchen_downlight_06
+          name: Downlight 06
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_09
-          name: Downlight 09
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_09_power
             name: Power
+          entity: light.kitchen_downlight_09
+          name: Downlight 09
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_10
-          name: Downlight 10
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_10_power
             name: Power
+          entity: light.kitchen_downlight_10
+          name: Downlight 10
           toggle: true
           type: custom:multiple-entity-row
         head:
-          entity: light.kitchen_downlights_a
-          name: Downlights A
           entities:
           - entity: sensor.kitchen_downlights_a_power
             name: Power
+          entity: light.kitchen_downlights_a
+          name: Downlights A
           toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
-        - entity: light.kitchen_downlight_03
-          name: Downlight 03
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_03_power
             name: Power
+          entity: light.kitchen_downlight_03
+          name: Downlight 03
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_04
-          name: Downlight 04
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_04_power
             name: Power
+          entity: light.kitchen_downlight_04
+          name: Downlight 04
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_07
-          name: Downlight 07
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_07_power
             name: Power
+          entity: light.kitchen_downlight_07
+          name: Downlight 07
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_08
-          name: Downlight 08
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_08_power
             name: Power
+          entity: light.kitchen_downlight_08
+          name: Downlight 08
           toggle: true
           type: custom:multiple-entity-row
         head:
-          entity: light.kitchen_downlights_b
-          name: Downlights B
           entities:
           - entity: sensor.kitchen_downlights_b_power
             name: Power
+          entity: light.kitchen_downlights_b
+          name: Downlights B
           toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       - entities:
-        - entity: light.kitchen_downlight_11
-          name: Downlight 11
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_11_power
             name: Power
+          entity: light.kitchen_downlight_11
+          name: Downlight 11
           toggle: true
           type: custom:multiple-entity-row
-        - entity: light.kitchen_downlight_12
-          name: Downlight 12
-          entities:
+        - entities:
           - entity: sensor.kitchen_downlight_12_power
             name: Power
+          entity: light.kitchen_downlight_12
+          name: Downlight 12
           toggle: true
           type: custom:multiple-entity-row
         head:
-          entity: light.kitchen_downlights_c
-          name: Downlights C
           entities:
           - entity: sensor.kitchen_downlights_c_power
             name: Power
+          entity: light.kitchen_downlights_c
+          name: Downlights C
           toggle: true
           type: custom:multiple-entity-row
         type: custom:fold-entity-row
       head:
-        entity: light.kitchen_downlights
-        name: Downlights
         entities:
         - entity: sensor.kitchen_downlights_power
           name: Power
+        entity: light.kitchen_downlights
+        name: Downlights
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
-      entity: light.kitchen_lights
-      name: Lights
       entities:
       - entity: sensor.kitchen_lights_power
         name: Power
+      entity: light.kitchen_lights
+      name: Lights
       toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row

@@ -3,35 +3,35 @@ cards:
 - entities:
   - entities:
     - entities:
-      - entity: light.laundry_downlight_1
-        name: Downlight 1
-        entities:
+      - entities:
         - entity: sensor.laundry_downlight_1_power
           name: Power
+        entity: light.laundry_downlight_1
+        name: Downlight 1
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.laundry_downlight_2
-        name: Downlight 2
-        entities:
+      - entities:
         - entity: sensor.laundry_downlight_2_power
           name: Power
+        entity: light.laundry_downlight_2
+        name: Downlight 2
         toggle: true
         type: custom:multiple-entity-row
       head:
-        entity: light.laundry_downlights
-        name: Downlights
         entities:
         - entity: sensor.laundry_downlights_power
           name: Power
+        entity: light.laundry_downlights
+        name: Downlights
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
-      entity: light.laundry_lights
-      name: Lights
       entities:
       - entity: sensor.laundry_lights_power
         name: Power
+      entity: light.laundry_lights
+      name: Lights
       toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row

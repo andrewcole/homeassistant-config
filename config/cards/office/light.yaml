@@ -3,73 +3,73 @@ cards:
 - entities:
   - entities:
     - entities:
-      - entity: light.office_downlight_1
-        name: Downlight 1
-        entities:
+      - entities:
         - entity: sensor.office_downlight_1_power
           name: Power
+        entity: light.office_downlight_1
+        name: Downlight 1
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.office_downlight_2
-        name: Downlight 2
-        entities:
+      - entities:
         - entity: sensor.office_downlight_2_power
           name: Power
+        entity: light.office_downlight_2
+        name: Downlight 2
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.office_downlight_3
-        name: Downlight 3
-        entities:
+      - entities:
         - entity: sensor.office_downlight_3_power
           name: Power
+        entity: light.office_downlight_3
+        name: Downlight 3
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.office_downlight_4
-        name: Downlight 4
-        entities:
+      - entities:
         - entity: sensor.office_downlight_4_power
           name: Power
+        entity: light.office_downlight_4
+        name: Downlight 4
         toggle: true
         type: custom:multiple-entity-row
       head:
-        entity: light.office_downlights
-        name: Downlights
         entities:
         - entity: sensor.office_downlights_power
           name: Power
+        entity: light.office_downlights
+        name: Downlights
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     - entities:
-      - entity: light.office_tablelight_1
-        name: Tablelight 1
-        entities:
+      - entities:
         - entity: sensor.office_tablelight_1_power
           name: Power
+        entity: light.office_tablelight_1
+        name: Tablelight 1
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.office_tablelight_2
-        name: Tablelight 2
-        entities:
+      - entities:
         - entity: sensor.office_tablelight_2_power
           name: Power
+        entity: light.office_tablelight_2
+        name: Tablelight 2
         toggle: true
         type: custom:multiple-entity-row
       head:
-        entity: light.office_tablelights
-        name: Tablelights
         entities:
         - entity: sensor.office_tablelights_power
           name: Power
+        entity: light.office_tablelights
+        name: Tablelights
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
-      entity: light.office_lights
-      name: Lights
       entities:
       - entity: sensor.office_lights_power
         name: Power
+      entity: light.office_lights
+      name: Lights
       toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row

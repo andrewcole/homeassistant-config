@@ -3,35 +3,35 @@ cards:
 - entities:
   - entities:
     - entities:
-      - entity: light.garage_fluro_1
-        name: Fluro 1
-        entities:
+      - entities:
         - entity: sensor.garage_fluro_1_power
           name: Power
+        entity: light.garage_fluro_1
+        name: Fluro 1
         toggle: true
         type: custom:multiple-entity-row
-      - entity: light.garage_fluro_2
-        name: Fluro 2
-        entities:
+      - entities:
         - entity: sensor.garage_fluro_2_power
           name: Power
+        entity: light.garage_fluro_2
+        name: Fluro 2
         toggle: true
         type: custom:multiple-entity-row
       head:
-        entity: light.garage_fluros
-        name: Fluros
         entities:
         - entity: sensor.garage_fluros_power
           name: Power
+        entity: light.garage_fluros
+        name: Fluros
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
     head:
-      entity: light.garage_lights
-      name: Lights
       entities:
       - entity: sensor.garage_lights_power
         name: Power
+      entity: light.garage_lights
+      name: Lights
       toggle: true
       type: custom:multiple-entity-row
     type: custom:fold-entity-row

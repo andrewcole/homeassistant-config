@@ -9,8 +9,9 @@ cards:
     head:
       entity: sensor.office_temperature
       name: Temperature
-      secondary_info: "Sensor Battery {{states('sensor.office_climate_sensor_battery') }}%"
-      type: custom:secondaryinfo-entity-row
+      secondary_info: Sensor Battery {{ states('sensor.office_climate_sensor_battery') }}%
+      toggle: true
+      type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
 - entity: climate.office_hvac
