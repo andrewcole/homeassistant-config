@@ -5,14 +5,14 @@ cards:
     - entities:
       - entities:
         - entity: sensor.garage_fluro_1_power
-          name: Power
+          name: false
         entity: light.garage_fluro_1
         name: Fluro 1
         toggle: true
         type: custom:multiple-entity-row
       - entities:
         - entity: sensor.garage_fluro_2_power
-          name: Power
+          name: false
         entity: light.garage_fluro_2
         name: Fluro 2
         toggle: true
@@ -20,7 +20,7 @@ cards:
       head:
         entities:
         - entity: sensor.garage_fluros_power
-          name: Power
+          name: false
         entity: light.garage_fluros
         name: Fluros
         toggle: true
@@ -29,7 +29,7 @@ cards:
     head:
       entities:
       - entity: sensor.garage_lights_power
-        name: Power
+        name: false
       entity: light.garage_lights
       name: Lights
       toggle: true

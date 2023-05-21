@@ -5,7 +5,7 @@ cards:
     - entities:
       - entities:
         - entity: sensor.entrance_downlight_1_power
-          name: Power
+          name: false
         entity: light.entrance_downlight_1
         name: Downlight 1
         toggle: true
@@ -13,7 +13,7 @@ cards:
       head:
         entities:
         - entity: sensor.entrance_downlights_power
-          name: Power
+          name: false
         entity: light.entrance_downlights
         name: Downlights
         toggle: true
@@ -22,7 +22,7 @@ cards:
     head:
       entities:
       - entity: sensor.entrance_lights_power
-        name: Power
+        name: false
       entity: light.entrance_lights
       name: Lights
       toggle: true

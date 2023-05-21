@@ -5,14 +5,14 @@ cards:
     - entities:
       - entities:
         - entity: sensor.backyard_downlight_1_power
-          name: Power
+          name: false
         entity: light.backyard_downlight_1
         name: Downlight 1
         toggle: true
         type: custom:multiple-entity-row
       - entities:
         - entity: sensor.backyard_downlight_2_power
-          name: Power
+          name: false
         entity: light.backyard_downlight_2
         name: Downlight 2
         toggle: true
@@ -20,7 +20,7 @@ cards:
       head:
         entities:
         - entity: sensor.backyard_downlights_power
-          name: Power
+          name: false
         entity: light.backyard_downlights
         name: Downlights
         toggle: true
@@ -29,7 +29,7 @@ cards:
     head:
       entities:
       - entity: sensor.backyard_lights_power
-        name: Power
+        name: false
       entity: light.backyard_lights
       name: Lights
       toggle: true

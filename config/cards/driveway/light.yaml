@@ -5,14 +5,14 @@ cards:
     - entities:
       - entities:
         - entity: sensor.driveway_downlight_1_power
-          name: Power
+          name: false
         entity: light.driveway_downlight_1
         name: Downlight 1
         toggle: true
         type: custom:multiple-entity-row
       - entities:
         - entity: sensor.driveway_downlight_2_power
-          name: Power
+          name: false
         entity: light.driveway_downlight_2
         name: Downlight 2
         toggle: true
@@ -20,7 +20,7 @@ cards:
       head:
         entities:
         - entity: sensor.driveway_downlights_power
-          name: Power
+          name: false
         entity: light.driveway_downlights
         name: Downlights
         toggle: true
@@ -29,7 +29,7 @@ cards:
     head:
       entities:
       - entity: sensor.driveway_lights_power
-        name: Power
+        name: false
       entity: light.driveway_lights
       name: Lights
       toggle: true
