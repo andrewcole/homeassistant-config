@@ -1,0 +1,9 @@
+---
+cards:
+- entities:
+- entity: climate.kitchen_hvac
+  type: thermostat
+columns: 1
+square: false
+title: Climate
+type: grid
