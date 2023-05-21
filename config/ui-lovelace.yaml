@@ -10,6 +10,9 @@ views:
 - cards: !include_dir_list cards/bedroom
   path: bedroom
   title: Bedroom
+- cards: !include_dir_list cards/driveway
+  path: driveway
+  title: Driveway
 - cards: !include_dir_list cards/ensuite
   path: ensuite
   title: Ensuite
