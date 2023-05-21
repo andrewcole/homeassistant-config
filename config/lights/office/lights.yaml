@@ -1,6 +1,7 @@
 ---
 entities:
 - light.office_downlights
+- light.office_tablelights
 name: Office Lights
 platform: group
 unique_id: office_lights

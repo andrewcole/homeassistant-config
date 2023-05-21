@@ -25,6 +25,21 @@ cards:
         secondary_info: "{{states('sensor.office_downlights_power') | round(1) }} W"
         type: custom:secondaryinfo-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entity: light.office_tablelight_1
+        name: Tablelight 1
+        secondary_info: "{{states('sensor.office_tablelight_1_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      - entity: light.office_tablelight_2
+        name: Tablelight 2
+        secondary_info: "{{states('sensor.office_tablelight_2_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      head:
+        entity: light.office_tablelights
+        name: Tablelights
+        secondary_info: "{{states('sensor.office_tablelights_power') | round(1) }} W"
+        type: custom:secondaryinfo-entity-row
+      type: custom:fold-entity-row
     head:
       entity: light.office_lights
       name: Lights
