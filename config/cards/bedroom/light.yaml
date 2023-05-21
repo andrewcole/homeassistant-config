@@ -26,6 +26,15 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entity: light.bedroom_tablelight_1
+        name: Tablelight 1
+      - entity: light.bedroom_tablelight_2
+        name: Tablelight 2
+      head:
+        entity: light.bedroom_tablelights
+        name: Tablelights
+      type: custom:fold-entity-row
     head:
       entities:
       - entity: sensor.bedroom_lights_power
