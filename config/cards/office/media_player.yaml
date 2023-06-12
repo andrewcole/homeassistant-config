@@ -1,0 +1,13 @@
+---
+cards:
+- entity: media_player.office_shield
+  type: media-control
+- entity: media_player.office_speaker
+  type: media-control
+- entities:
+  - switch.office_google_mini
+  type: entities
+columns: 1
+square: false
+title: Media Players
+type: grid

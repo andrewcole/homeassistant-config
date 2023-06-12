@@ -1,0 +1,11 @@
+---
+cards:
+- entity: media_player.bedroom_speaker
+  type: media-control
+- entities:
+  - switch.bedroom_google_mini
+  type: entities
+columns: 1
+square: false
+title: Media Players
+type: grid

@@ -1,0 +1,11 @@
+---
+cards:
+- entity: media_player.garage_speaker
+  type: media-control
+- entities:
+  - switch.garage_google_mini
+  type: entities
+columns: 1
+square: false
+title: Media Players
+type: grid
