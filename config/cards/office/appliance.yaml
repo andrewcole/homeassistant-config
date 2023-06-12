@@ -1,0 +1,15 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.office_rack_power
+      name: Power
+    head:
+      entity: sensor.office_rack_mode
+      name: Office Rack
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid

@@ -1,0 +1,22 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.fridge_power
+      name: Power
+    head:
+      entity: sensor.fridge_mode
+      name: Server Rack
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.dishwasher_power
+      name: Power
+    head:
+      entity: sensor.dishwasher_mode
+      name: Network Rack
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid

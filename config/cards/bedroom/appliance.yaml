@@ -1,0 +1,22 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.blanket_left_power
+      name: Power
+    head:
+      entity: sensor.blanket_left_mode
+      name: Left Blanket
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.blanket_right_power
+      name: Power
+    head:
+      entity: sensor.blanket_right_mode
+      name: Right Blanket
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid

@@ -1,0 +1,22 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.washer_power
+      name: Power
+    head:
+      entity: sensor.washer_mode
+      name: Washer
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.dryer_power
+      name: Power
+    head:
+      entity: sensor.dryer_mode
+      name: Dryer
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Appliances
+type: grid
