@@ -1,8 +1,7 @@
 ---
-sensor:
-- unique_id: stairwell_nightlight_6_power
-  name: Stairwell Nightlight 6 Power
-  device_class: power
-  unit_of_measurement: W
-  state: |-
-    {{ (states('sensor.stairwell_nightlights_power') | float(0.0)) / 6 }}
+unique_id: stairwell_nightlight_6_power
+name: Stairwell Nightlight 6 Power
+device_class: power
+unit_of_measurement: W
+state: |-
+  {{ (states('sensor.stairwell_nightlights_power') | float(0.0)) / 6 }}
