@@ -2,18 +2,11 @@
 cards:
 - entities:
   - entities:
-    - entity: sensor.bedroom_stairwell_door_battery
+    - entity: sensor.office_stairwell_door_battery
       name: Sensor Battery
     head:
-      entity: binary_sensor.bedroom_stairwell_door
-      name: Bedroom Door
-    type: custom:fold-entity-row
-  - entities:
-    - entity: sensor.laundry_stairwell_door_battery
-      name: Sensor Battery
-    head:
-      entity: binary_sensor.laundry_stairwell_door
-      name: Laundry Door
+      entity: binary_sensor.office_stairwell_door
+      name: Office Door
     type: custom:fold-entity-row
   - entities:
     - entity: sensor.lounge_stairwell_door_battery
@@ -23,11 +16,32 @@ cards:
       name: Lounge Door
     type: custom:fold-entity-row
   - entities:
-    - entity: sensor.office_stairwell_door_battery
+    - entity: sensor.bedroom_stairwell_door_battery
       name: Sensor Battery
     head:
-      entity: binary_sensor.office_stairwell_door
-      name: Office Door
+      entity: binary_sensor.bedroom_stairwell_door
+      name: Bedroom Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.bathroom_stairwell_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.bathroom_stairwell_door
+      name: Bathroom Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.laundry_stairwell_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.laundry_stairwell_door
+      name: Laundry Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.brewhouse_stairwell_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.brewhouse_stairwell_door
+      name: Brewhouse Door
     type: custom:fold-entity-row
   type: entities
 columns: 1
