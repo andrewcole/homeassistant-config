@@ -10,20 +10,20 @@ action:
       entity_id: light.office_downlights
   if:
   - condition: state
-    entity_id: light.office_downlights
+    entity_id: light.office_lights
     state: "on"
   then:
   - data:
       transition: 1
     service: light.turn_off
     target:
-      entity_id: light.office_downlights
+      entity_id: light.office_lights
 alias: Office Downlights
 mode: single
 trigger:
 - entity_id:
   - sensor.office_switch_1
   - sensor.office_switch_2
-  from: "OFF"
+  from: "ON"
   platform: state
-  to: DOUBLE
+  to: "OFF"
