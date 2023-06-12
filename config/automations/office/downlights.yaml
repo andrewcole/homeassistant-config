@@ -22,8 +22,8 @@ alias: Office Downlights
 mode: single
 trigger:
 - entity_id:
-  - sensor.office_switch_1
-  - sensor.office_switch_2
+  - binary_sensor.office_switch_1
+  - binary_sensor.office_switch_2
   from: "ON"
   platform: state
   to: "OFF"
