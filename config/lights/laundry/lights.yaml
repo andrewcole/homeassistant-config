@@ -1,6 +1,7 @@
 ---
 entities:
 - light.laundry_downlights
+- light.laundry_nightlights
 name: Laundry Lights
 platform: group
 unique_id: laundry_lights

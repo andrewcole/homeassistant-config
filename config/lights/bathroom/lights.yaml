@@ -1,6 +1,7 @@
 ---
 entities:
 - light.bathroom_downlights
+- light.bathroom_nightlights
 name: Bathroom Lights
 platform: group
 unique_id: bathroom_lights

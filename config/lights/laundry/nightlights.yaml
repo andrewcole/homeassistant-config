@@ -1,0 +1,6 @@
+---
+entities:
+- light.laundry_nightlight_1
+name: Laundry Nightlights
+platform: group
+unique_id: laundry_nights

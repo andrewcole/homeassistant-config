@@ -1,6 +1,7 @@
 ---
 entities:
 - light.stairwell_downlights
+- light.stairwell_nightlights
 name: Stairwell Lights
 platform: group
 unique_id: stairwell_lights

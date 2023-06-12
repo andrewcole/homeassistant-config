@@ -1,0 +1,6 @@
+---
+entities:
+- light.ensuite_nightlight_1
+name: Ensuite Nightlights
+platform: group
+unique_id: ensuite_nightlights
