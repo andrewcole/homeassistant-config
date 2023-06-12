@@ -1,0 +1,14 @@
+---
+cards:
+- card:
+    show_header_toggle: false
+    type: entities
+  filter:
+    include:
+    - state: unavailable
+  show_empty: false
+  type: custom:auto-entities
+columns: 1
+square: false
+title: Unavailable Entities
+type: grid

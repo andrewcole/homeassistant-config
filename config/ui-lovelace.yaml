@@ -1,6 +1,9 @@
 ---
 title: Moonya
 views:
+- cards: !include_dir_list cards/_default
+  path: default_view
+  title: Home
 - cards: !include_dir_list cards/backyard
   path: backyard
   title: Backyard

@@ -1,0 +1,8 @@
+---
+cards:
+- link_dashboard: true
+  type: energy-distribution
+columns: 1
+square: false
+title: Energy
+type: grid
