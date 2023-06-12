@@ -1,0 +1,46 @@
+---
+action:
+- else:
+  - data:
+      brightness_pct: 80
+      color_temp: 500
+      transition: 0
+    service: light.turn_on
+    target:
+      entity_id: light.lounge_tablelights
+  if:
+  - condition: state
+    entity_id: light.lounge_lights
+    state: "on"
+  then:
+  - else:
+    - data:
+        brightness_pct: 80
+        color_temp: 500
+      service: light.turn_on
+      target:
+        entity_id: light.lounge_downlights
+    if:
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: light.lounge_lights
+        for:
+          seconds: 5
+        state: "on"
+      - condition: state
+        entity_id: light.lounge_downlights
+        state: "on"
+    then:
+    - service: light.turn_off
+      target:
+        entity_id: light.lounge_lights
+alias: Lounge Lights
+mode: single
+trigger:
+- entity_id:
+  - binary_sensor.lounge_switch_1
+  - binary_sensor.lounge_switch_2
+  from: "off"
+  platform: state
+  to: "on"
