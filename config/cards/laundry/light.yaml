@@ -26,6 +26,23 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entities:
+        - entity: sensor.laundry_nightlight_1_power
+          name: false
+        entity: light.laundry_nightlight_1
+        name: Nightlight 1
+        toggle: true
+        type: custom:multiple-entity-row
+      head:
+        entities:
+        - entity: sensor.laundry_nightlights_power
+          name: false
+        entity: light.laundry_nightlights
+        name: Nightlights
+        toggle: true
+        type: custom:multiple-entity-row
+      type: custom:fold-entity-row
     head:
       entities:
       - entity: sensor.laundry_lights_power
