@@ -1,0 +1,20 @@
+---
+action:
+- data:
+    brightness_pct: 100
+    color_temp: 153
+    transition: 0
+  service: light.turn_on
+  target:
+    entity_id: light.laundry_downlights
+alias: Laundry Lights (Bright)
+mode: single
+trigger:
+- entity_id:
+  - binary_sensor.laundry_switch_1
+  - binary_sensor.laundry_switch_2
+  for:
+    seconds: 2
+  from: "off"
+  platform: state
+  to: "on"

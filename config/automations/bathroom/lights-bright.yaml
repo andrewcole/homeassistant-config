@@ -1,0 +1,19 @@
+---
+action:
+- data:
+    brightness_pct: 100
+    color_temp: 153
+    transition: 0
+  service: light.turn_on
+  target:
+    entity_id: light.bathroom_downlights
+alias: Bathroom Lights (Bright)
+mode: single
+trigger:
+- entity_id:
+  - binary_sensor.bathroom_switch
+  for:
+    seconds: 2
+  from: "off"
+  platform: state
+  to: "on"
