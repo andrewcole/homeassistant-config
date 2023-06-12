@@ -2,6 +2,8 @@
 entities:
 - light.lounge_downlight_1
 - light.lounge_downlight_2
+- light.lounge_downlight_3
+- light.lounge_downlight_4
 - light.lounge_downlight_5
 name: Lounge Downlights
 platform: group
