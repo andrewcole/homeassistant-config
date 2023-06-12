@@ -6,14 +6,14 @@ cards:
       name: Power
     head:
       entity: sensor.fridge_mode
-      name: Server Rack
+      name: Fridge
     type: custom:fold-entity-row
   - entities:
     - entity: sensor.dishwasher_power
       name: Power
     head:
       entity: sensor.dishwasher_mode
-      name: Network Rack
+      name: Dishwasher
     type: custom:fold-entity-row
   type: entities
 columns: 1
