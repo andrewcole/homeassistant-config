@@ -1,11 +1,14 @@
 ---
 cards:
 - entities:
-  - entity: binary_sensor.office_stairwell_door
-    name: Stairwell Door
-    secondary_info: Sensor Battery {{ states('sensor.office_stairwell_door_battery') }}%
-    toggle: true
-    type: custom:multiple-entity-row
+  - entities:
+    - entity: sensor.office_stairwell_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.office_stairwell_door
+      name: Stairwell Door
+      type: custom:multiple-entity-row
+    type: custom:fold-entity-row
   type: entities
 columns: 1
 square: false
