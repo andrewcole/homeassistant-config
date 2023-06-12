@@ -2,6 +2,15 @@
 cards:
 - entities:
   - entities:
+    - entity: sensor.lounge_terrace_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.lounge_terrace_door
+      name: Lounge Door
+    type: custom:fold-entity-row
+  type: entities
+- entities:
+  - entities:
     - entity: sensor.lounge_stairwell_door_battery
       name: Sensor Battery
     head:

@@ -2,11 +2,29 @@
 cards:
 - entities:
   - entities:
+    - entity: sensor.garage_driveway_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.garage_driveway_door
+      name: Driveway Door
+    type: custom:fold-entity-row
+  type: entities
+- entities:
+  - entities:
     - entity: sensor.garage_entrance_door_battery
       name: Sensor Battery
     head:
       entity: binary_sensor.garage_entrance_door
       name: Entrance Door
+    type: custom:fold-entity-row
+  type: entities
+- entities:
+  - entities:
+    - entity: sensor.garage_backyard_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.garage_backyard_door
+      name: Backyard Door
     type: custom:fold-entity-row
   type: entities
 columns: 1

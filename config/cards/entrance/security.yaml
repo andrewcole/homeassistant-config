@@ -2,10 +2,10 @@
 cards:
 - entities:
   - entities:
-    - entity: sensor.office_entrance_driveway_battery
+    - entity: sensor.entrance_driveway_door_battery
       name: Sensor Battery
     head:
-      entity: binary_sensor.office_entrance_driveway
+      entity: binary_sensor.entrance_driveway_door
       name: Driveway Door
     type: custom:fold-entity-row
   type: entities
