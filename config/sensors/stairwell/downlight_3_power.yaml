@@ -1,0 +1,24 @@
+---
+sensor:
+- unique_id: stairwell_downlight_3_power
+  name: Stairwell Downlight 3 Power
+  device_class: power
+  unit_of_measurement: W
+  state: |-
+    {{
+      (
+        (
+          (states('sensor.stairwell_downlights_b_power') | float(0.0))
+          /
+          (state_attr('light.stairwell_downlights_b', 'entity_id') | list | length)
+        )
+        if (state_attr('light.stairwell_downlights_b', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+        0
+      )
+      if states('light.stairwell_downlight_3') == 'off' else
+      (
+        (states('sensor.stairwell_downlights_b_power') | float(0.0))
+        /
+        (state_attr('light.stairwell_downlights_b', 'entity_id') | select('is_state', 'on') | list | length)
+      )
+    }}
