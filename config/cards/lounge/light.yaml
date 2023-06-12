@@ -47,6 +47,44 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entities:
+        - entity: sensor.lounge_tablelight_1_power
+          name: false
+        entity: light.lounge_tablelight_1
+        name: Tablelight 1
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.lounge_tablelight_2_power
+          name: false
+        entity: light.lounge_tablelight_2
+        name: Tablelight 2
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.lounge_tablelight_3_power
+          name: false
+        entity: light.lounge_tablelight_3
+        name: Tablelight 3
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.lounge_tablelight_4_power
+          name: false
+        entity: light.lounge_tablelight_4
+        name: Tablelight 4
+        toggle: true
+        type: custom:multiple-entity-row
+      head:
+        entities:
+        - entity: sensor.lounge_tablelights_power
+          name: false
+        entity: light.lounge_tablelights
+        name: Tablelights
+        toggle: true
+        type: custom:multiple-entity-row
+      type: custom:fold-entity-row
     head:
       entities:
       - entity: sensor.lounge_lights_power

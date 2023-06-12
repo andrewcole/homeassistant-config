@@ -1,6 +1,7 @@
 ---
 entities:
 - light.lounge_downlights
+- light.lounge_tablelights
 name: Lounge Lights
 platform: group
 unique_id: lounge_lights
