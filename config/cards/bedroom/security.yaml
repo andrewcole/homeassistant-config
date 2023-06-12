@@ -20,7 +20,7 @@ cards:
       name: Sensor Battery
     head:
       entity: binary_sensor.bedroom_terrace_door
-      name: Stairwell Door
+      name: Terrace Door
     type: custom:fold-entity-row
   type: entities
 columns: 1
