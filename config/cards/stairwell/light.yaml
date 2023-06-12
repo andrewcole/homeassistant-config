@@ -70,6 +70,58 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entities:
+        - entity: sensor.stairwell_nightlight_1_power
+          name: false
+        entity: light.stairwell_nightlight_1
+        name: Nightlight 1
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.stairwell_nightlight_2_power
+          name: false
+        entity: light.stairwell_nightlight_2
+        name: Nightlight 2
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.stairwell_nightlight_3_power
+          name: false
+        entity: light.stairwell_nightlight_3
+        name: Nightlight 3
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.stairwell_nightlight_4_power
+          name: false
+        entity: light.stairwell_nightlight_4
+        name: Nightlight 4
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.stairwell_nightlight_5_power
+          name: false
+        entity: light.stairwell_nightlight_5
+        name: Nightlight 5
+        toggle: true
+        type: custom:multiple-entity-row
+      - entities:
+        - entity: sensor.stairwell_nightlight_6_power
+          name: false
+        entity: light.stairwell_nightlight_6
+        name: Nightlight 6
+        toggle: true
+        type: custom:multiple-entity-row
+      head:
+        entities:
+        - entity: sensor.stairwell_nightlights_power
+          name: false
+        entity: light.stairwell_nightlights
+        name: Nightlights
+        toggle: true
+        type: custom:multiple-entity-row
+      type: custom:fold-entity-row
     head:
       entities:
       - entity: sensor.stairwell_lights_power

@@ -19,6 +19,23 @@ cards:
         toggle: true
         type: custom:multiple-entity-row
       type: custom:fold-entity-row
+    - entities:
+      - entities:
+        - entity: sensor.ensuite_nightlight_1_power
+          name: false
+        entity: light.ensuite_nightlight_1
+        name: Nightlight 1
+        toggle: true
+        type: custom:multiple-entity-row
+      head:
+        entities:
+        - entity: sensor.ensuite_nightlights_power
+          name: false
+        entity: light.ensuite_nightlights
+        name: Nightlights
+        toggle: true
+        type: custom:multiple-entity-row
+      type: custom:fold-entity-row
     head:
       entities:
       - entity: sensor.ensuite_lights_power
