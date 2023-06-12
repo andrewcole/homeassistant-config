@@ -1,0 +1,20 @@
+---
+cards:
+- entities:
+  - sensor.climate_on_count
+  type: entities
+- entity: climate.bedroom_hvac
+  type: thermostat
+- entity: climate.kitchen_hvac
+  type: thermostat
+- entity: climate.lounge_hvac
+  type: thermostat
+- entity: climate.office_hvac
+  type: thermostat
+- entity: weather.forecast_moonya
+  show_forecast: false
+  type: weather-forecast
+columns: 1
+square: false
+title: Climate
+type: grid

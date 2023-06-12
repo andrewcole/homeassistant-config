@@ -1,5 +1,19 @@
 ---
 cards:
+- entities:
+  - entities:
+    - entity: sensor.bedroom_humidity
+      name: Humidity
+    - entity: sensor.bedroom_pressure
+      name: Pressure
+    - entity: sensor.bedroom_climate_battery
+      name: Sensor Battery
+    head:
+      entity: sensor.bedroom_temperature
+      name: Temperature
+      type: custom:multiple-entity-row
+    type: custom:fold-entity-row
+  type: entities
 - entity: climate.bedroom_hvac
   type: thermostat
 columns: 1

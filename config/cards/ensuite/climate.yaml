@@ -2,20 +2,18 @@
 cards:
 - entities:
   - entities:
-    - entity: sensor.office_humidity
+    - entity: sensor.ensuite_humidity
       name: Humidity
-    - entity: sensor.office_pressure
+    - entity: sensor.ensuite_pressure
       name: Pressure
-    - entity: sensor.office_climate_battery
+    - entity: sensor.ensuite_climate_battery
       name: Sensor Battery
     head:
-      entity: sensor.office_temperature
+      entity: sensor.ensuite_temperature
       name: Temperature
       type: custom:multiple-entity-row
     type: custom:fold-entity-row
   type: entities
-- entity: climate.office_hvac
-  type: thermostat
 columns: 1
 square: false
 title: Climate
