@@ -8,8 +8,6 @@ cards:
       entity: binary_sensor.lounge_terrace_door
       name: Lounge Door
     type: custom:fold-entity-row
-  type: entities
-- entities:
   - entities:
     - entity: sensor.bedroom_terrace_door_battery
       name: Sensor Battery
