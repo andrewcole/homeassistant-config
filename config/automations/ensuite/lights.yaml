@@ -18,7 +18,7 @@ action:
     service: light.turn_off
     target:
       entity_id: light.ensuite_downlights
-alias: ensuite Lights
+alias: Ensuite Lights
 mode: single
 trigger:
 - entity_id:
