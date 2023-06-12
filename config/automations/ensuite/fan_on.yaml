@@ -1,0 +1,12 @@
+---
+action:
+- service: switch.turn_on
+  target:
+    entity_id: switch.ensuite_fan
+alias: Ensuite Fan On
+mode: single
+trigger:
+- entity_id:
+  - light.ensuite_downlights
+  platform: state
+  to: "on"

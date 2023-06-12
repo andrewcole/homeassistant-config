@@ -1,0 +1,12 @@
+---
+action:
+- service: switch.turn_on
+  target:
+    entity_id: switch.bathroom_fan
+alias: Bathroom Fan On
+mode: single
+trigger:
+- entity_id:
+  - light.bathroom_downlights
+  platform: state
+  to: "on"
