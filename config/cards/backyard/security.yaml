@@ -1,0 +1,22 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.kitchen_backyard_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.kitchen_backyard_door
+      name: Kitchen Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.garage_backyard_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.garage_backyard_door
+      name: Garage Door
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Security
+type: grid

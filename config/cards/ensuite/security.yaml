@@ -2,11 +2,11 @@
 cards:
 - entities:
   - entities:
-    - entity: sensor.office_stairwell_door_battery
+    - entity: sensor.ensuite_bedroom_door_battery
       name: Sensor Battery
     head:
-      entity: binary_sensor.office_stairwell_door
-      name: Stairwell Door
+      entity: binary_sensor.ensuite_bedroom_door
+      name: Bedroom Door
     type: custom:fold-entity-row
   type: entities
 columns: 1

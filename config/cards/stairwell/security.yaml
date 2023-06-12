@@ -6,7 +6,7 @@ cards:
       name: Sensor Battery
     head:
       entity: binary_sensor.office_stairwell_door
-      name: Stairwell Door
+      name: Office Door
     type: custom:fold-entity-row
   type: entities
 columns: 1

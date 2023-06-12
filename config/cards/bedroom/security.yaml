@@ -1,0 +1,29 @@
+---
+cards:
+- entities:
+  - entities:
+    - entity: sensor.bedroom_stairwell_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.bedroom_stairwell_door
+      name: Stairwell Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.ensuite_bedroom_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.ensuite_bedroom_door
+      name: Ensuite Door
+    type: custom:fold-entity-row
+  - entities:
+    - entity: sensor.bedroom_terrace_door_battery
+      name: Sensor Battery
+    head:
+      entity: binary_sensor.bedroom_terrace_door
+      name: Stairwell Door
+    type: custom:fold-entity-row
+  type: entities
+columns: 1
+square: false
+title: Security
+type: grid
