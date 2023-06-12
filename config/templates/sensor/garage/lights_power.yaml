@@ -1,0 +1,9 @@
+---
+device_class: power
+name: Garage Lights Power
+state: |-
+  {{
+    states('sensor.garage_fluros_power') | float(0.0)
+  }}
+unique_id: garage_lights_power
+unit_of_measurement: W

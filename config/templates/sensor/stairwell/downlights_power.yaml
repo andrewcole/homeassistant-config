@@ -1,11 +1,11 @@
 ---
-unique_id: stairwell_downlights_power
-name: Stairwell Downlights Power
 device_class: power
-unit_of_measurement: W
+name: Stairwell Downlights Power
 state: |-
   {{
     states('sensor.stairwell_downlights_a_power') | float(0.0) +
     states('sensor.stairwell_downlights_b_power') | float(0.0) +
     states('sensor.stairwell_downlights_c_power') | float(0.0)
   }}
+unique_id: stairwell_downlights_power
+unit_of_measurement: W

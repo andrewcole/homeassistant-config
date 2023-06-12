@@ -1,0 +1,23 @@
+---
+device_class: power
+name: Entrance Downlight 1 Power
+state: |-
+  {{
+    (
+      (
+        (states('sensor.entrance_downlights_power') | float(0.0))
+        /
+        (state_attr('light.entrance_downlights', 'entity_id') | list | length)
+      )
+      if (state_attr('light.entrance_downlights', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+      0
+    )
+    if states('light.entrance_downlight_1') == 'off' else
+    (
+      (states('sensor.entrance_downlights_power') | float(0.0))
+      /
+      (state_attr('light.entrance_downlights', 'entity_id') | select('is_state', 'on') | list | length)
+    )
+  }}
+unique_id: entrance_downlight_1_power
+unit_of_measurement: W

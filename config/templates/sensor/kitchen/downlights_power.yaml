@@ -1,0 +1,11 @@
+---
+device_class: power
+name: Kitchen Downlights Power
+state: |-
+  {{
+    states('sensor.kitchen_downlights_a_power') | float(0.0) +
+    states('sensor.kitchen_downlights_b_power') | float(0.0) +
+    states('sensor.kitchen_downlights_c_power') | float(0.0)
+  }}
+unique_id: kitchen_downlights_power
+unit_of_measurement: W

@@ -1,0 +1,23 @@
+---
+device_class: power
+name: Laundry Downlight 2 Power
+state: |-
+  {{
+    (
+      (
+        (states('sensor.laundry_downlights_power') | float(0.0))
+        /
+        (state_attr('light.laundry_downlights', 'entity_id') | list | length)
+      )
+      if (state_attr('light.laundry_downlights', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+      0
+    )
+    if states('light.laundry_downlight_2') == 'off' else
+    (
+      (states('sensor.laundry_downlights_power') | float(0.0))
+      /
+      (state_attr('light.laundry_downlights', 'entity_id') | select('is_state', 'on') | list | length)
+    )
+  }}
+unique_id: laundry_downlight_2_power
+unit_of_measurement: W

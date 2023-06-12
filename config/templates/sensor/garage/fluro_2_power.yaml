@@ -1,0 +1,7 @@
+---
+device_class: power
+name: Garage Fluro 2 Power
+state: |-
+  {{ (states('sensor.garage_fluros_power') | float(0.0)) / 2 }}
+unique_id: garage_fluro_2_power
+unit_of_measurement: W

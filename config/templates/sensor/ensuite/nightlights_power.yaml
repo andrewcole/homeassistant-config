@@ -1,0 +1,9 @@
+---
+device_class: power
+name: Ensuite Nightlights Power
+state: |-
+  {{
+    states('sensor.ensuite_nightlight_1_power') | float(0.0)
+  }}
+unique_id: ensuite_nightlights_power
+unit_of_measurement: W

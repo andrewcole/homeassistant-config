@@ -1,0 +1,9 @@
+---
+device_class: power
+name: Office Lights Power
+state: |-
+  {{
+    states('sensor.office_downlights_power') | float(0.0)
+  }}
+unique_id: office_lights_power
+unit_of_measurement: W

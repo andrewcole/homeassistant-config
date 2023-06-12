@@ -1,8 +1,6 @@
 ---
-unique_id: stairwell_downlight_4_power
-name: Stairwell Downlight 4 Power
 device_class: power
-unit_of_measurement: W
+name: Stairwell Downlight 4 Power
 state: |-
   {{
     (
@@ -21,3 +19,5 @@ state: |-
       (state_attr('light.stairwell_downlights_c', 'entity_id') | select('is_state', 'on') | list | length)
     )
   }}
+unique_id: stairwell_downlight_4_power
+unit_of_measurement: W

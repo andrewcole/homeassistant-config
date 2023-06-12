@@ -1,0 +1,23 @@
+---
+device_class: power
+name: Kitchen Downlight 12 Power
+state: |-
+  {{
+    (
+      (
+        (states('sensor.kitchen_downlights_c_power') | float(0.0))
+        /
+        (state_attr('light.kitchen_downlights_c', 'entity_id') | list | length)
+      )
+      if (state_attr('light.kitchen_downlights_c', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+      0
+    )
+    if states('light.kitchen_downlight_12') == 'off' else
+    (
+      (states('sensor.kitchen_downlights_c_power') | float(0.0))
+      /
+      (state_attr('light.kitchen_downlights_c', 'entity_id') | select('is_state', 'on') | list | length)
+    )
+  }}
+unique_id: kitchen_downlight_12_power
+unit_of_measurement: W

@@ -1,0 +1,23 @@
+---
+device_class: power
+name: Lounge Downlight 1 Power
+state: |-
+  {{
+    (
+      (
+        (states('sensor.lounge_downlights_power') | float(0.0))
+        /
+        (state_attr('light.lounge_downlights', 'entity_id') | list | length)
+      )
+      if (state_attr('light.lounge_downlights', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+      0
+    )
+    if states('light.lounge_downlight_1') == 'off' else
+    (
+      (states('sensor.lounge_downlights_power') | float(0.0))
+      /
+      (state_attr('light.lounge_downlights', 'entity_id') | select('is_state', 'on') | list | length)
+    )
+  }}
+unique_id: lounge_downlight_1_power
+unit_of_measurement: W

@@ -1,0 +1,10 @@
+---
+device_class: power
+name: Backyard Downlights Power
+state: |-
+  {{
+    states('sensor.backyard_downlight_1_power') | float(0.0) +
+    states('sensor.backyard_downlight_2_power') | float(0.0)
+  }}
+unique_id: backyard_downlights_power
+unit_of_measurement: W

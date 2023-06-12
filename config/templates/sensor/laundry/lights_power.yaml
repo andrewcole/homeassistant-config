@@ -1,0 +1,10 @@
+---
+device_class: power
+name: Laundry Lights Power
+state: |-
+  {{
+    states('sensor.laundry_downlights_power') | float(0.0) +
+    states('sensor.laundry_nightlights_power') | float(0.0)
+  }}
+unique_id: laundry_lights_power
+unit_of_measurement: W

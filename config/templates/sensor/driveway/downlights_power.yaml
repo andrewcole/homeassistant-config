@@ -1,0 +1,10 @@
+---
+device_class: power
+name: Driveway Downlights Power
+state: |-
+  {{
+    states('sensor.driveway_downlight_1_power') | float(0.0) +
+    states('sensor.driveway_downlight_2_power') | float(0.0)
+  }}
+unique_id: driveway_downlights_power
+unit_of_measurement: W

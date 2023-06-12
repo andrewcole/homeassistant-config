@@ -1,0 +1,9 @@
+---
+device_class: power
+name: Bathroom Nightlights Power
+state: |-
+  {{
+    states('sensor.bathroom_nightlight_1_power') | float(0.0)
+  }}
+unique_id: bathroom_nightlights_power
+unit_of_measurement: W

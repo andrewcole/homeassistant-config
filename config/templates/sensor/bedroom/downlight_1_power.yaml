@@ -1,0 +1,23 @@
+---
+device_class: power
+name: Bedroom Downlight 1 Power
+state: |-
+  {{
+    (
+      (
+        (states('sensor.bedroom_downlights_power') | float(0.0))
+        /
+        (state_attr('light.bedroom_downlights', 'entity_id') | list | length)
+      )
+      if (state_attr('light.bedroom_downlights', 'entity_id') | select('is_state', 'on') | list | length) == 0 else
+      0
+    )
+    if states('light.bedroom_downlight_1') == 'off' else
+    (
+      (states('sensor.bedroom_downlights_power') | float(0.0))
+      /
+      (state_attr('light.bedroom_downlights', 'entity_id') | select('is_state', 'on') | list | length)
+    )
+  }}
+unique_id: bedroom_downlight_1_power
+unit_of_measurement: W
