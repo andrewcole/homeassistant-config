@@ -1,0 +1,26 @@
+---
+action:
+- else:
+  - data:
+      transition: 0
+    service: light.turn_off
+    target:
+      entity_id: light.ensuite_nightlights
+  if:
+  - condition: state
+    entity_id: switch.ensuite_fan
+    state: "on"
+  then:
+  - data:
+      brightness_pct: 80
+      color_temp: 500
+      transition: 0
+    service: light.turn_on
+    target:
+      entity_id: light.ensuite_nightlights
+alias: Ensuite Nightlights
+mode: single
+trigger:
+- entity_id:
+  - switch.ensuite_fan
+  platform: state
