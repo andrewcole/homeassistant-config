@@ -22,7 +22,8 @@ alias: Laundry Lights
 mode: single
 trigger:
 - entity_id:
-  - binary_sensor.laundry_switch
+  - binary_sensor.laundry_switch_1
+  - binary_sensor.laundry_switch_2
   from: "off"
   platform: state
   to: "on"
