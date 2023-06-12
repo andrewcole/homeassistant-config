@@ -75,6 +75,7 @@ cards:
         - entity: sensor.stairwell_nightlight_1_power
           name: false
         entity: light.stairwell_nightlight_1
+        icon: mdi:lightbulb
         name: Nightlight 1
         toggle: true
         type: custom:multiple-entity-row
@@ -82,6 +83,7 @@ cards:
         - entity: sensor.stairwell_nightlight_2_power
           name: false
         entity: light.stairwell_nightlight_2
+        icon: mdi:lightbulb
         name: Nightlight 2
         toggle: true
         type: custom:multiple-entity-row
@@ -89,6 +91,7 @@ cards:
         - entity: sensor.stairwell_nightlight_3_power
           name: false
         entity: light.stairwell_nightlight_3
+        icon: mdi:lightbulb
         name: Nightlight 3
         toggle: true
         type: custom:multiple-entity-row
@@ -96,6 +99,7 @@ cards:
         - entity: sensor.stairwell_nightlight_4_power
           name: false
         entity: light.stairwell_nightlight_4
+        icon: mdi:lightbulb
         name: Nightlight 4
         toggle: true
         type: custom:multiple-entity-row
@@ -103,6 +107,7 @@ cards:
         - entity: sensor.stairwell_nightlight_5_power
           name: false
         entity: light.stairwell_nightlight_5
+        icon: mdi:lightbulb
         name: Nightlight 5
         toggle: true
         type: custom:multiple-entity-row
@@ -110,6 +115,7 @@ cards:
         - entity: sensor.stairwell_nightlight_6_power
           name: false
         entity: light.stairwell_nightlight_6
+        icon: mdi:lightbulb
         name: Nightlight 6
         toggle: true
         type: custom:multiple-entity-row
@@ -127,6 +133,7 @@ cards:
       - entity: sensor.stairwell_lights_power
         name: false
       entity: light.stairwell_lights
+      icon: mdi:lightbulb-group
       name: Lights
       toggle: true
       type: custom:multiple-entity-row
