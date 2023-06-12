@@ -8,7 +8,7 @@ action:
       entity_id: light.stairwell_nightlights
   if:
   - condition: state
-    entity_id: switch.stairwell_downlights
+    entity_id: light.stairwell_downlights
     state: "on"
   then:
   - data:
@@ -22,5 +22,5 @@ alias: Stairwell Nightlights
 mode: single
 trigger:
 - entity_id:
-  - switch.stairwell_downlights
+  - light.stairwell_downlights
   platform: state
