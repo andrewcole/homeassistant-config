@@ -4,8 +4,6 @@ cards:
   - entities:
     - entity: sensor.brewhouse_humidity
       name: Humidity
-    - entity: sensor.brewhouse_pressure
-      name: Pressure
     - entity: sensor.brewhouse_climate_battery
       name: Sensor Battery
     head:
