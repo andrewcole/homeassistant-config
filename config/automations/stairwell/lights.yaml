@@ -1,0 +1,30 @@
+---
+action:
+- else:
+  - data:
+      brightness_pct: 80
+      color_temp: 500
+      transition: 0
+    service: light.turn_on
+    target:
+      entity_id: light.stairwell_downlights
+  if:
+  - condition: state
+    entity_id: light.stairwell_downlights
+    state: "on"
+  then:
+  - data:
+      transition: 0
+    service: light.turn_off
+    target:
+      entity_id: light.stairwell_downlights
+alias: Stairwell Lights
+mode: single
+trigger:
+- entity_id:
+  - binary_sensor.stairwell_switch_1
+  - binary_sensor.stairwell_switch_2
+  - binary_sensor.stairwell_switch_3
+  from: "off"
+  platform: state
+  to: "on"
