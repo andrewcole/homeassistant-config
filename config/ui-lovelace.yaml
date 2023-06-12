@@ -13,6 +13,9 @@ views:
 - cards: !include_dir_list cards/bedroom
   path: bedroom
   title: Bedroom
+- cards: !include_dir_list cards/brewhouse
+  path: brewhouse
+  title: Brewhouse
 - cards: !include_dir_list cards/driveway
   path: driveway
   title: Driveway
@@ -40,3 +43,6 @@ views:
 - cards: !include_dir_list cards/stairwell
   path: stairwell
   title: Stairwell
+- cards: !include_dir_list cards/terrace
+  path: terrace
+  title: Terrace
