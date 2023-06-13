@@ -1,6 +1,8 @@
 ---
 cards:
 - entities:
+  - entity: binary_sensor.garage_motion
+    name: Motion
   - entities:
     - entity: sensor.garage_driveway_door_battery
       name: Sensor Battery
