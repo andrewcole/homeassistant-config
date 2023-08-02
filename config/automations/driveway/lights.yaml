@@ -1,0 +1,29 @@
+---
+action:
+- else:
+  - data:
+      transition: 0
+    service: light.turn_off
+    target:
+      entity_id: light.driveway_lights
+  if:
+  - after: sunset
+    before: sunrise
+    condition: sun
+  then:
+  - data:
+      transition: 0
+    service: light.turn_on
+    target:
+      entity_id: light.driveway_lights
+alias: Driveway Lights
+mode: single
+trigger:
+- event: start
+  platform: homeassistant
+- event: sunrise
+  offset: 0
+  platform: sun
+- event: sunset
+  offset: 0
+  platform: sun
