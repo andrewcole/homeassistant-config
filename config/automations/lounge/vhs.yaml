@@ -1,0 +1,30 @@
+---
+action:
+- else:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.lounge_vhs
+  if:
+  - condition: template
+    value_template: "{{ is_state_attr('media_player.amplifier','source','VHS') }}"
+  then:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.lounge_vhs
+alias: Lounge VHS power
+mode: single
+trigger:
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 5
+  platform: state
+  to: VHS
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 10
+  from: VHS
+  platform: state

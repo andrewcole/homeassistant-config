@@ -1,0 +1,30 @@
+---
+action:
+- else:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.lounge_cassette
+  if:
+  - condition: template
+    value_template: "{{ is_state_attr('media_player.amplifier','source','Cassette') }}"
+  then:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.lounge_cassette
+alias: Lounge Cassette power
+mode: single
+trigger:
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 5
+  platform: state
+  to: Cassette
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 10
+  from: Cassette
+  platform: state

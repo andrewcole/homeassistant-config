@@ -1,0 +1,30 @@
+---
+action:
+- else:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.lounge_md
+  if:
+  - condition: template
+    value_template: "{{ is_state_attr('media_player.amplifier','source','MD') }}"
+  then:
+  - service: switch.turn_on
+    target:
+      entity_id: switch.lounge_md
+alias: Lounge MD power
+mode: single
+trigger:
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 5
+  platform: state
+  to: MD
+- attribute: source
+  entity_id:
+  - media_player.amplifier
+  for:
+    seconds: 10
+  from: MD
+  platform: state
